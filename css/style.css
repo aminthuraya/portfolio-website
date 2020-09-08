@@ -43,46 +43,47 @@ img {
   width: 100%;
 }
 a {
-    color: #386cfc;
-    text-decoration: none; /* No underlining */
-  }
-  a:hover {
-    color: #cc6540;
-    text-decoration: underline; /* Underlining when hovering over a link */
-  }
-  a:visited { /* visited link */
-    color: #386cfc;
-  }
-  a:active { /* selected link */
-    color: #994c30;
-  }
-  a:hover,
+  color: #386cfc;
+  text-decoration: none; /* No underlining */
+}
+a:hover {
+  color: #cc6540;
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
+a:visited {
+  /* visited link */
+  color: #386cfc;
+}
+a:active {
+  /* selected link */
+  color: #994c30;
+}
+a:hover,
 a:focus {
   color: #cc6540;
   text-decoration: underline;
 }
 .button {
-    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-    background-color: #c5c5c5;
-    color: #ffffff; /* needed to override the default link color */
-    font-weight: 400;
-    padding: 10px;
-    border-radius: 3px;
-    border-bottom: 2px solid #838383; /* width of the border, type, color */
-    transition: 0.2s opacity;
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #c5c5c5;
+  color: #ffffff; /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #838383; /* width of the border, type, color */
+  transition: 0.2s opacity;
 }
 .button:hover {
-    opacity: 0.8; /* Reduces the opacity of the button to 80% */
-    text-decoration: none;
-  }
-  .button.contact {
-    background-color: transparent;
-    color: #386cfc;
-    text-transform: lowercase;
-    border: 1px solid #386cfc;
-  }
-  .button.contact:hover {
-    background-color: #c5c5c5;
-    color: #ffffff;
-  }
-  
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+.button.contact {
+  background-color: transparent;
+  color: #386cfc;
+  text-transform: lowercase;
+  border: 1px solid #386cfc;
+}
+.button.contact:hover {
+  background-color: #c5c5c5;
+  color: #ffffff;
+}
