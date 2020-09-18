@@ -109,6 +109,7 @@ a.button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #e5edf8;
   color: #4e4e4e; /* needed to override the default link color */
+  margin: 0px 160px; 
   font-weight: 400;
   padding: 6px;
   border-radius: 3px;
@@ -152,7 +153,25 @@ a.button.contact:hover {
   width: 100%;
 }
 #work h2 {
-  text-align: left; 
+  margin: 20px 160px; 
+}
+#work h3 {
+  margin: 20px 160px; 
+}
+#work p {
+  margin: 20px 160px; 
+}
+.diamas-mockup {
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; 
+}
+.hive-mockup {
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; 
 }
 #work {
   background-color: #ffffff;
@@ -209,6 +228,9 @@ footer {
 #diamas h1 {
   text-align: center;  
 }
+#diamas h3 {
+  text-align: center; 
+}
 #diamas {
   background-color: #ffffff;
   padding: 20px 0;
@@ -241,6 +263,9 @@ footer {
 }
 #hive h1 {
   text-align: center;  
+}
+#hive h3 {
+  text-align: center; 
 }
 #hive {
   background-color: #ffffff;
