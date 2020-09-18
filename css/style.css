@@ -1,8 +1,51 @@
 /*
 Colors used:
-Primary Color (Blue): #ffffff;
-Secondary Color (Green): #4a4a4a;
+Primary Color (white): #ffffff;
+Secondary Color (Gray): #4a4a4a;
 */
+* {
+  box-sizing: border-box;
+}
+header {
+  background-color: #e5edf8;
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 0px 5px 8px 0px rgba(48, 50, 50, 0.43);
+  position: fixed;
+  margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
+  width: 100%;
+}
+main {
+  padding-top: 100px;
+}
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+  display: inline-block;
+  width: 100%;
+}
+nav > ul > li {
+  display: inline-block;
+}
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #4a4a4a;
+}
+a:visited {
+  /* visited link */
+  color: #386cfc;
+  font-weight: 700;
+}
+a:hover {
+  color: #cc6540;
+}
+a:active {
+  /* selected link */
+  color: #080053;
+  font-weight: 700;
+}
 head {
   font-family: "Montserrat", sans-serif;
 }
@@ -14,8 +57,7 @@ body {
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   color: #4a4a4a;
 }
-
-h1,
+h1, 
 h2,
 h3,
 h4 {
@@ -46,13 +88,13 @@ a {
   color: #386cfc;
   text-decoration: none; /* No underlining */
 }
-a:hover {
-  color: #cc6540;
-  text-decoration: underline; /* Underlining when hovering over a link */
-}
 a:visited {
   /* visited link */
   color: #386cfc;
+}
+a:hover {
+  color: #cc6540;
+  text-decoration: underline; /* Underlining when hovering over a link */
 }
 a:active {
   /* selected link */
@@ -63,27 +105,167 @@ a:focus {
   color: #cc6540;
   text-decoration: underline;
 }
-.button {
+a.button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #c5c5c5;
-  color: #ffffff; /* needed to override the default link color */
+  background-color: #e5edf8;
+  color: #4e4e4e; /* needed to override the default link color */
   font-weight: 400;
-  padding: 10px;
+  padding: 6px;
   border-radius: 3px;
-  border-bottom: 2px solid #838383; /* width of the border, type, color */
+  box-shadow: 0px 5px 10px 0px rgba(48, 50, 50, 0.43);
   transition: 0.2s opacity;
 }
-.button:hover {
+a.button:hover {
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
   text-decoration: none;
+  background-color: #c5c5c5;
+  color: #ffffff;
 }
-.button.contact {
+a.button.contact {
   background-color: transparent;
   color: #386cfc;
   text-transform: lowercase;
   border: 1px solid #386cfc;
 }
-.button.contact:hover {
+a.button.contact:hover {
   background-color: #c5c5c5;
   color: #ffffff;
+}
+
+/* Layout styling */
+  .container {
+    padding: 0 15px;
+  }
+  .row {
+    margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  }
+  #hero h1 {
+    text-align: center; /* Centers text */
+  }
+#hero h4 {
+  text-align: center; /* Centers text */
+}
+#hero {
+  background-color: #e5edf8;
+  padding: 0px 0;
+  display: inline-block;
+  width: 100%;
+}
+#work h2 {
+  text-align: left; 
+}
+#work {
+  background-color: #ffffff;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+#about h1 {
+  text-align: center;  
+}
+#about {
+  padding-top: 15px;
+}
+#about {
+  background-color: #ffffff;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+.profile {
+  width: 250px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 2px 5px 8px 0px rgba(48, 50, 50, 0.43);
+}
+#mystory {
+  width: 40%;
+  padding: 10px;
+  float: left;
+  text-align: left;
+  margin-right: 200px;
+  margin-left: 200px;
+}
+#skills > {
+  width: 40%;
+  padding: 10px;
+  list-style-type: none;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+}
+footer {
+  background-color: #e5edf8;
+  text-align: center;
+  padding: 10px 0;
+  position: absolute;
+  margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
+  width: 100%;
+}
+#diamas {
+  padding-top: 15px;
+}
+#diamas h1 {
+  text-align: center;  
+}
+#diamas {
+  background-color: #ffffff;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+.diamas-photo {
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#diamas-intro {
+  padding-top: 15px;
+}
+#diamas-intro {
+  background-color: #ffffff;
+  padding: 20px 0;
+  margin-right: 200px;
+  margin-left: 200px;
+  float: left;
+  width: 80%;
+  text-align: left;  
+}
+.introduction-diamas > li {
+  font-weight: 600;
+}
+#hive {
+  padding-top: 15px;
+}
+#hive h1 {
+  text-align: center;  
+}
+#hive {
+  background-color: #ffffff;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+.hive-photo {
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#hive-intro {
+  padding-top: 15px;
+}
+#hive-intro {
+  background-color: #ffffff;
+  padding: 20px 0;
+  margin-right: 200px;
+  margin-left: 200px;
+  float: left;
+  width: 80%;
+  text-align: left;  
+}
+.introduction-hive > li {
+  font-weight: 600;
 }
