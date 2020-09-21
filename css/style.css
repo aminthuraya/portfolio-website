@@ -111,7 +111,7 @@ a.button {
   color: #4e4e4e; /* needed to override the default link color */
   margin: 0px 160px; 
   font-weight: 400;
-  padding: 6px;
+  padding: 10px 30px 10px 30px;
   border-radius: 3px;
   box-shadow: 0px 5px 10px 0px rgba(48, 50, 50, 0.43);
   transition: 0.2s opacity;
@@ -123,14 +123,14 @@ a.button:hover {
   color: #ffffff;
 }
 a.button.contact {
-  background-color: transparent;
-  color: #386cfc;
+  background-color: #4a4a4a;
+  color: #fff;
   text-transform: lowercase;
-  border: 1px solid #386cfc;
-}
+  padding: 10px 30px 10px 30px;
+  }
 a.button.contact:hover {
   background-color: #c5c5c5;
-  color: #ffffff;
+  color: #252525;
 }
 
 /* Layout styling */
@@ -181,6 +181,7 @@ a.button.contact:hover {
 }
 #about h1 {
   text-align: center;  
+  font-weight: 400px;
 }
 #about {
   padding-top: 15px;
@@ -293,18 +294,20 @@ footer {
   margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
   width: 100%;
 }
-.social-links svg {
-  height: 30px;
-  width: 50%;
+.social-links {
   position: relative;
-  
-  list-style-type: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-53%, -50%);
 }
 .social-links li {
-  position: relative;
-  display: block;
-  text-align: center;
-  list-style-type: none;
-  width: auto;
-  padding: 40px 0;
+list-style: none;
+padding:50px 0px 0px 50px;
+margin: 5px;
+display: inline-block;
+font-size: 30px;
+color: #fff;
+}
+.fab {
+color: #4a4a4a;
 }
