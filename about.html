@@ -9,8 +9,7 @@
     />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap"
-      rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet"
     />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
@@ -33,8 +32,8 @@
     <!-- For the header -->
     <header>
       <!-- For the navigation -->
-      <div>
-        Thuraya Amin
+      <div class="container">
+        <a href="index.html" class="title">Thuraya Amin</a>
         <nav>
           <ul>
             <li><a href="index.html">Work</a></li>
@@ -47,11 +46,15 @@
     <main>
       <div id="about">
         <div class="container">
-        <h1>ABOUT</h1>
+        <h2>ABOUT</h2>
         <span></span>
       </div>
     </div>
-      <div>
+    <div id="mystory">
+    <div class="container">
+    <h2>My Story</h2>
+      <div class="row">
+    <div class="col-md-6">
         <picture>
           <source
             srcset="img/about/thuraya-profile@1.jpg" 
@@ -62,11 +65,7 @@
             alt="Thuraya Profile Picture"
           />
         </picture>
-      </div>
-      <div id="mystory">
-        <div class="container">
-      <div class="row">
-        <h2>My Story</h2>
+    </div>
         <p>
           Hello and welcome… I am a UI designer living in the Greater Toronto
           Area (GTA), in the beautiful town of Oakville with it’s picturesque
@@ -78,7 +77,6 @@
           from all perspectives and translating the idea into a coherent visual
           story.
         </p>
-
         <p>
           Being able to solve problems with solid solutions derived from
           research, communication, and iterations are only some of the aspects
@@ -101,15 +99,14 @@
         </p>
         <a href="files/resume.pdf" class="button">Download my Resume</a>
       </div>
-        </div>
-      </div>
-      <div></div>
+    </div>
+    </div>
       <div id="skills">
         <div class="container">
-        <h2>Skills and Tools</h2>
-      </div>
-      <div>
-        <h3>Relevant Skills</h3>
+          <h2>Skills and Tools</h2>
+      <div class="row">
+        <div class="col-md-6">   
+      <h3>Relevant Skills</h3> 
         <ul>
           <li>Wireframing</li>
           <li>Prototyping</li>
@@ -120,16 +117,15 @@
         </ul>
       </div>
       </div>
-      <div>
-        <h3>Development Skills</h3>
+      <h3>Development Skills</h3>
         <ul>
           <li>HTML</li>
           <li>CSS</li>
           <li>JavaScript</li>
         </ul>
-      </div>
-      <div>
         <h3>Tools</h3>
+        
+          <div class="col-md-6">
         <ul>
           <li>Sketch</li>
           <li>InVision</li>
@@ -138,7 +134,11 @@
           <li>Omnigraffle</li>
           <li>Adobe Suite</li>
         </ul>
-      </div>
+          </div>
+        </div>
+    
+    </div>
+    
     </main>
     <!-- For the footer  -->
     <footer>
@@ -146,11 +146,11 @@
         <h2 id="letsworktogether">Let's work together</h2>
         <p>
           If you like what you see, I would love to hear from you, you can reach
-          me on <a href="tel:+15555555555">+1 555 555 5555</a>. Or email me
+          me via
         </p>
         <div>
           <a href="mailto:aminthuraya@gmail.com" class="button contact"
-            >Email Me</a>
+>Email Me</a>
         </div>
         <div class="social-links">
           <!--Social Media Layout-->

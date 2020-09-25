@@ -8,43 +8,36 @@ Secondary Color (Gray): #4a4a4a;
 }
 header {
   background-color: #e5edf8;
-  text-align: center;
   padding: 10px 0;
   box-shadow: 0px 5px 8px 0px rgba(48, 50, 50, 0.43);
   position: fixed;
   margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
   width: 100%;
+  text-align: center;
+}
+.title {
+  font-size: 1.625em;
+  font-weight: 400;
+  color: #4a4a4a;
+  font-family: Montserrat;
 }
 main {
-  padding-top: 100px;
+  padding-top: 99px;
 }
 nav > ul {
   list-style-type: none;
   padding: 0;
   display: inline-block;
   width: 100%;
+  
 }
 nav > ul > li {
   display: inline-block;
 }
 nav > ul > li > a {
-  padding: 0 15px;
+  padding: 0px 15px;
   text-transform: uppercase;
-  font-weight: 400;
-  color: #4a4a4a;
-}
-a:visited {
-  /* visited link */
-  color: #386cfc;
-  font-weight: 700;
-}
-a:hover {
-  color: #cc6540;
-}
-a:active {
-  /* selected link */
-  color: #080053;
-  font-weight: 700;
+  font-weight: 400; 
 }
 head {
   font-family: "Montserrat", sans-serif;
@@ -52,7 +45,7 @@ head {
 body {
   font-family: "Open Sans", sans-serif;
   background-color: #ffffff;
-  font-size: 16px; /* Sets the font size to 16px */
+  font-size: 18px; /* Sets the font size to 16px */
   font-weight: 300; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   color: #4a4a4a;
@@ -62,59 +55,64 @@ h2,
 h3,
 h4 {
   line-height: 1.4;
+  font-family: Montserrat;
 }
 h1 {
   font-size: 2.75em;
-  font-weight: 700;
-}
+  font-weight: 800;
+ }
 
 h2 {
   font-size: 2.25em;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 h3 {
   font-size: 1.75em;
-  font-weight: 400;
+  font-weight: 600;
 }
 h4 {
   font-size: 1.35em;
   font-weight: 400;
 }
 img {
-  width: 100%;
+  width: 100%; 
+  max-width: 100%; 
+  height: auto;
 }
 a {
-  color: #386cfc;
+  color: #4a4a4a;
   text-decoration: none; /* No underlining */
+  transition: 0.8s opacity;
 }
 a:visited {
   /* visited link */
-  color: #386cfc;
+  color: #4a4a4a;
 }
 a:hover {
-  color: #cc6540;
+  color: #386cfc;
   text-decoration: underline; /* Underlining when hovering over a link */
+  opacity: 0.8;
 }
 a:active {
   /* selected link */
-  color: #994c30;
+  color: #993030;
 }
 a:hover,
 a:focus {
-  color: #cc6540;
+  color: #386cfc;
   text-decoration: underline;
 }
 a.button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #e5edf8;
   color: #4e4e4e; /* needed to override the default link color */
-  margin: 0px 160px; 
+  margin: auto;
   font-weight: 400;
   padding: 10px 30px 10px 30px;
   border-radius: 3px;
   box-shadow: 0px 5px 10px 0px rgba(48, 50, 50, 0.43);
-  transition: 0.2s opacity;
+  transition: 0.8s opacity;
 }
 a.button:hover {
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
@@ -127,10 +125,14 @@ a.button.contact {
   color: #fff;
   text-transform: lowercase;
   padding: 10px 30px 10px 30px;
+  transition: 0.8s opacity;
+
   }
 a.button.contact:hover {
   background-color: #c5c5c5;
   color: #252525;
+  opacity: 0.8;
+  text-decoration: none;
 }
 
 /* Layout styling */
@@ -140,20 +142,33 @@ a.button.contact:hover {
   .row {
     margin: 25px 0; /* 25px top and bottom, 0 left and right */
   }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
   #hero h1 {
     text-align: center; /* Centers text */
+    display: block;
+    font-weight: 600;
   }
-#hero h4 {
+  #hero h4 {
   text-align: center; /* Centers text */
 }
-#hero {
+  #hero {
   background-color: #e5edf8;
-  padding: 0px 0;
+  padding: 20px 0;
   display: inline-block;
   width: 100%;
+  text-align: center;
+}
+#hero span {
+  display: block;
 }
 #work h2 {
   margin: 20px 160px; 
+  text-align: center;
+
 }
 #work h3 {
   margin: 20px 160px; 
@@ -161,12 +176,7 @@ a.button.contact:hover {
 #work p {
   margin: 20px 160px; 
 }
-.diamas-mockup {
-  width: 80%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto; 
-}
+
 .hive-mockup {
   width: 80%;
   display: block;
@@ -179,40 +189,40 @@ a.button.contact:hover {
   display: inline-block;
   width: 100%;
 }
-#about h1 {
-  text-align: center;  
-  font-weight: 400px;
-}
-#about {
-  padding-top: 15px;
-}
 #about {
   background-color: #ffffff;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
+  }
+
+#about h1 {
+  text-align: center;  
+  text-align: center;
+}
+#about h2 {
+  text-align: center;  
+  text-align: center;
+}
+#mystory h2 {
+  text-align: left;
+  margin: 0px 140px; 
+
 }
 .profile {
-  width: 250px;
+  width: 60%;
   display: block;
   margin-left: auto;
-  margin-right: auto;
-  box-shadow: 2px 5px 8px 0px rgba(48, 50, 50, 0.43);
+  margin-right: auto; 
 }
-#mystory {
-  width: 40%;
-  padding: 10px;
-  float: left;
-  text-align: left;
-  margin-right: 200px;
-  margin-left: 200px;
+#skills h2 {
+  text-align: left; 
 }
-#skills > {
-  width: 40%;
-  padding: 10px;
-  text-align: left;
-  margin-left: auto;
-  margin-right: auto;
+#skills {
+   margin: 30px 140px; 
+  display: inline-block;
+  width: 100%;
+  
 }
 #diamas {
   padding-top: 15px;
@@ -301,13 +311,216 @@ footer {
   transform: translate(-53%, -50%);
 }
 .social-links li {
-list-style: none;
-padding:50px 0px 0px 50px;
-margin: 5px;
-display: inline-block;
-font-size: 30px;
-color: #fff;
+  list-style: none;
+  padding:50px 0px 0px 50px;
+  margin: 5px;
+  display: inline-block;
+  font-size: 30px;
+  color: #fff;
 }
 .fab {
 color: #4a4a4a;
+transition: 0.5s opacity;
 }
+.fab:visited {
+  color: #386cfc;
+}
+.fab:hover {
+  color: #386cfc; 
+  opacity: 0.8;  
+}
+.fab:active {
+  color: #383737;
+}
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+.cloud-move-reverse {
+  animation: 30s cloud-move infinite alternate linear;
+}
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+.cloud-back {
+  animation: 30s cloud-move-reverse infinite alternate linear;
+}
+@keyframes cloud-back {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+/* Start of animation 2 */
+#Sailboats {
+  animation: 5s move-change infinite alternate linear;
+}
+
+@keyframes move-change {
+  from {transform: translate(-5,10px);}
+  to {transform: translate(20px,10px);}
+}
+#Cloud {
+  animation: 30s move-clouds infinite alternate linear;
+ }
+
+@keyframes move-clouds {
+  from {transform: translate(0,20px);}
+  to {transform: translate(280px,10px);}
+}
+
+#Cloud-2 {
+  animation: 20s move-clouds infinite alternate linear;
+}
+
+@keyframes move-clouds {
+  from {transform: translate(0,10px);}
+  to {transform: translate(100px,20px);}
+}
+#Sun-2 {
+  animation: 20s color-change infinite alternate linear;
+}
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+
+.cls-11 {
+  animation: 5s tower infinite alternate linear;
+}
+@keyframes tower {
+  0% {fill: #f86019;}
+  50% {fill: #f8fd6d;}
+  100% {fill: #1814f7;}
+}
+
+/* Start of animation 3 */
+
+#globe {
+  animation: 20s full-spin infinite linear;
+  transform-origin: center;
+  transform-box: fill-box; 
+}
+@keyframes full-spin {
+  0% { transform: rotate(10deg); }
+  100% { transform: rotate(-359deg); }
+}
+
+#music {
+  animation: 2s zoom infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+  }
+@keyframes zoom {
+  0% { transform: scale(0.6); }
+  50% { transform: scale(0.8); }
+  100% { transform: scale(0.6); }
+  }
+
+#outdoors {
+  animation: 2s wiggle infinite ease;
+}
+@keyframes wiggle {
+  0% { transform: translate(0, 0); }
+  50% { transform: translate(6px, 6px); }
+  100% { transform: translate(0, 0); }
+}
+#bake {
+  animation: 0.8s bounce infinite alternate ease;
+}
+@keyframes bounce {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(0, -10px); }
+}
+
+#text {
+  animation: typing 4s  infinite alternate ease ;
+  
+}
+@keyframes typing {
+  0% { transform: translate(0, 40px); }
+  100% { transform: translate(0, -40px); }
+}
+
+#Paint {
+  animation: 2s move-side infinite ease;
+}
+@keyframes move-side {
+  0% { transform: translate(0, 0); }
+  50% { transform: translate(-6px, -6px); }
+  100% { transform: translate(0, 0); }
+}
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+  .title {
+    width: auto;
+    float: left;
+    margin-top: 4px;
+  }
+.container {
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+[class*="col-"] {
+  width: 50%;
+  float: left;
+  padding: 10px;
+}
+}
+
+/* ==============================
+Extra-large devices (1920px or larger)
+================================= */
+@media only screen and (min-width: 1920px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+.container {
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+[class*="col-lg-"] {
+  width: 58.33%;
+  float: left;
+  padding: 20px;
+}
+}
+
+
+
