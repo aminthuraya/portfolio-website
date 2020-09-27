@@ -15,6 +15,25 @@ header {
   width: 100%;
   text-align: center;
 }
+
+.col-md-4 {
+  width: 33%;
+}
+
+.col-md-6 {
+  width: 50%;
+}
+
+.col-lg-4 {
+  width: 33%;
+}
+.col-lg-6 {
+  width: 50%;
+}
+.col-lg-7 {
+  width: 58.33%
+}
+
 .title {
   font-size: 1.625em;
   font-weight: 400;
@@ -168,13 +187,6 @@ a.button.contact:hover {
 #work h2 {
   margin: 20px 160px; 
   text-align: center;
-
-}
-#work h3 {
-  margin: 20px 160px; 
-}
-#work p {
-  margin: 20px 160px; 
 }
 
 .hive-mockup {
@@ -185,7 +197,7 @@ a.button.contact:hover {
 }
 #work {
   background-color: #ffffff;
-  padding: 20px 0;
+  padding: 40px 0;
   display: inline-block;
   width: 100%;
 }
@@ -198,16 +210,13 @@ a.button.contact:hover {
 
 #about h1 {
   text-align: center;  
-  text-align: center;
-}
+  }
 #about h2 {
   text-align: center;  
-  text-align: center;
-}
+ }
 #mystory h2 {
   text-align: left;
-  margin: 0px 140px; 
-
+  margin: 0 auto; 
 }
 .profile {
   width: 60%;
@@ -216,10 +225,12 @@ a.button.contact:hover {
   margin-right: auto; 
 }
 #skills h2 {
-  text-align: left; 
+  text-align: left;
+  margin: 0 auto; 
 }
 #skills {
-   margin: 30px 140px; 
+  margin: 0 auto;
+  padding: 20px 0;
   display: inline-block;
   width: 100%;
   
@@ -332,6 +343,7 @@ transition: 0.5s opacity;
 .fab:active {
   color: #383737;
 }
+
 .sun {
   animation: 4s color-change infinite alternate linear;
 }
@@ -488,7 +500,6 @@ Medium devices (640px and larger)
 }
 
 [class*="col-"] {
-  width: 50%;
   float: left;
   padding: 10px;
 }
@@ -516,7 +527,6 @@ Extra-large devices (1920px or larger)
 }
 
 [class*="col-lg-"] {
-  width: 58.33%;
   float: left;
   padding: 20px;
 }
