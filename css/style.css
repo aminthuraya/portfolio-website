@@ -249,15 +249,21 @@ a.button.contact:hover {
   padding: 20px 0;
   display: inline-block;
   width: 100%; 
-  width: 100%;
-  
 }
 
+#skills .container div {
+  text-align: center;
+}
+
+#skills .container div ul {
+  list-style: none;
+}
 
 #skills h2 {
   text-align: center;
   margin: 0 auto; 
 }
+
 #diamas {
   padding-top: 15px;
 }
@@ -357,23 +363,18 @@ footer {
 
 .social-links {
   position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-53%, -50%);
-  width: 100%;
+}
+.social-links ul{
+  padding: 0px;
 }
 .social-links li {
   list-style: none;
-  padding:50px 0px 0px 50px;
-  margin: 5px;
   display: inline-block;
   position: relative;
   font-size: 30px;
   color: #fff;
-  width: 100%;
-
+  margin-right: 10px;
 }
-
 
 .sun {
   animation: 4s color-change infinite alternate linear;
