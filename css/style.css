@@ -15,7 +15,7 @@ header {
   width: 100%;
   text-align: center;
 }
-
+/*
 .col-md-4 {
   width: 33%;
 }
@@ -23,22 +23,7 @@ header {
 .col-md-6 {
   width: 50%;
 }
-
-.col-lg-4 {
-  width: 33%;
-}
-
-.col-lg-5 {
-  width: 41.66%;
-}
-
-.col-lg-6 {
-  width: 50%;
-}
-.col-lg-7 {
-  width: 58.33%
-}
-
+*/
 .title {
   font-size: 1.625em;
   font-weight: 400;
@@ -242,6 +227,15 @@ a.button.contact:hover {
   display: block;
   margin-left: auto;
   margin-right: auto; 
+}
+
+[class*='col-'] {
+  float: left;
+  padding: 10px;
+}
+
+.col-sm-12 {
+  width: 100%;
 }
 
 #skills {
@@ -535,6 +529,15 @@ Medium devices (640px and larger)
   float: left;
   padding: 10px;
 }
+
+.col-md-4 {
+  width: 33%;
+}
+
+.col-md-6 {
+  width: 50%;
+}
+
 }
 
 /* ==============================
@@ -562,6 +565,23 @@ Large devices (1024px or larger)
   float: left;
   padding: 20px;
 }
+
+.col-lg-4 {
+  width: 33%;
+}
+
+.col-lg-5 {
+  width: 41.66%;
+}
+
+.col-lg-6 {
+  width: 50%;
+}
+
+.col-lg-7 {
+  width: 58.33%
+}
+
 }
 
 /* ==============================
