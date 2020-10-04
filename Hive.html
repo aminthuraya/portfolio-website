@@ -25,7 +25,8 @@
       name="description"
       content="Short description including keywords related to the pages content for SEO purposes"
     />
-    <script src="https://kit.fontawesome.com/ac77e37824.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ac77e37824.js" crossorigin="anonymous"><i class="fas fa-bars"></i></script>
+    
     <title>Hive Project</title>
   </head>
   <body>
@@ -33,15 +34,18 @@
     <header>
       <!-- For the navigation -->
       <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
         <a href="index.html" class="title">Thuraya Amin</a>
         <nav>
           <ul>
             <li><a href="index.html">Work</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="hive.html#letsworktogether">Contact</a></li>
+            <li><a href="hive.html#letsworktogether" onclick="menuToggle()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
           </ul>
         </nav>
       </div>
+    </div>
     </header>
     <main>
       <div id="hive">
