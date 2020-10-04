@@ -8,43 +8,60 @@ Secondary Color (Gray): #4a4a4a;
 }
 header {
   background-color: #e5edf8;
-  padding: 10px 0;
+  padding: 10px 0 4px;
   box-shadow: 0 5px 8px 0 rgba(48, 50, 50, 0.43);
   position: fixed;
   margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
   width: 100%;
-  text-align: center;
-}
-/*
-.col-md-4 {
-  width: 33%;
 }
 
-.col-md-6 {
-  width: 50%;
-}
-*/
 .title {
-  font-size: 1.625em;
+  font-size: 1.25em;
   font-weight: 400;
   color: #4a4a4a;
   font-family: Montserrat;
 }
 main {
-  padding-top: 99px;
-  max-width: 100%;
+  padding-top: 56px;
 }
 nav > ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
   display: inline-block;
-  width: 100%;
-  
+  width: 100%; 
 }
-nav > ul > li {
-  display: inline-block;
+.navtoggle li:not(:last-child) {
+  display: none;
+}
 
+.navtoggle.responsive li  {
+  display: block;
 }
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(133, 161, 253, 0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
 nav > ul > li > a {
   padding: 0px 15px;
   text-transform: uppercase;
@@ -168,6 +185,7 @@ a.button.contact:hover {
     text-align: center; /* Centers text */
     display: inline-block;
     font-weight: 600;
+    font-size: 30px;
     width: 100%;
    
   }
@@ -179,22 +197,15 @@ a.button.contact:hover {
   padding: 20px 0;
   display: inline-block;
   width: 100%;
-  text-align: center;
+  text-align: left;
   
 }
 #hero span {
   display: inline-block;
 }
 #work h2 {
-  margin: 20px 160px; 
-  text-align: center;
-}
-
-.hive-mockup {
-  width: 80%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto; 
+  margin: 10px;
+  text-align: left;
 }
 #work {
   background-color: #ffffff;
@@ -204,18 +215,15 @@ a.button.contact:hover {
 }
 
 #about {
-  background-color: #ffffff;
-  padding: 20px 0;
+  padding: 10px 0;
   display: inline-block;
   width: 100%;
-  position: relative;
+  
   }
 
-#about h1 {
-  text-align: center;  
-  }
 #about h2 {
   text-align: center;  
+  
  }
 #mystory h2 {
   text-align: center;
@@ -250,7 +258,7 @@ a.button.contact:hover {
 }
 
 #skills .container div ul {
-  list-style: none;
+  text-align: left;
 }
 
 #skills h2 {
@@ -258,73 +266,71 @@ a.button.contact:hover {
   margin: 0 auto; 
 }
 
-#diamas {
-  padding-top: 15px;
-}
 #diamas h1 {
   text-align: center;  
+
+}
+
+#diamas h2 {
+  font-size: 26px;
+  padding: 20px;
+  
+
 }
 #diamas h3 {
-  text-align: center; 
+  text-align: left; 
+  
 }
 #diamas {
   background-color: #ffffff;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
+
 }
-.diamas-photo {
-  width: 100%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+
+#diamas p {
+  padding: 20px;
 }
-#diamas-intro {
-  padding-top: 15px;
-}
+
 #diamas-intro {
   background-color: #ffffff;
-  padding: 20px 0;
-  margin-right: 200px;
-  margin-left: 200px;
   float: left;
-  width: 80%;
   text-align: left;  
 }
 .introduction-diamas > li {
   font-weight: 600;
 }
-#hive {
-  padding-top: 15px;
-}
 #hive h1 {
   text-align: center;  
+
+}
+
+#hive h2 {
+  font-size: 26px;
+  padding: 20px;
+  
+
 }
 #hive h3 {
-  text-align: center; 
+  text-align: left; 
+  
 }
 #hive {
   background-color: #ffffff;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
+
 }
-.hive-photo {
-  width: 100%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+
+#hive p {
+  padding: 20px;
 }
-#hive-intro {
-  padding-top: 15px;
-}
+
 #hive-intro {
   background-color: #ffffff;
-  padding: 20px 0;
-  margin-right: 200px;
-  margin-left: 200px;
   float: left;
-  width: 80%;
   text-align: left;  
 }
 .introduction-hive > li {
@@ -514,15 +520,101 @@ Medium devices (640px and larger)
     float: right;
     margin-top: 4px;
   }
+  nav > ul {
+    margin: 1em 0;
+  }
+  nav > ul > li {
+    display: inline-block;
+  }
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+  .navtoggle li:last-child {
+    display: none;    
+  }
   .title {
     width: auto;
     float: left;
     margin-top: 4px;
+    font-size: 1.625em;
+    font-weight: 400;
+  }
+  #about h2 {
+    padding-top: 40px; 
+  }
+  #hero h1 {
+    margin-top:40px;
+    font-size: 50px;
+  }
+
+  #work h2 {
+    margin: 10px;
+    text-align: center;
   }
 .container {
-  max-width: 640px;
+  max-width: 640px; 
+}
+
+#skills .container div {
+  text-align: center;
+}
+
+#skills .container div ul {
+  list-style: none;
+  text-align: center;
+
+}
+img {
+  display: block;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
+}
+
+#diamas h1 {
+  text-align: center;  
+  padding: 0;
+  font-size: 50px;
+  font-weight: 600;
+  padding-top: 40px;
+}
+
+#diamas {
+  width: 60%;
+  display: inline-block;
+  margin-left: 400px;
+  font-size: 22px;
+}
+
+#diamas h2 {
+  font-size: 40px;
+  text-align: left;
+}
+
+#diamas h3 {
+  text-align: center;
+}
+
+#hive h1 {
+  text-align: center;  
+  padding: 0;
+  font-weight: 600;
+  padding-top: 40px;
+}
+
+#hive {
+  width: 60%;
+  display: inline-block;
+  margin-left: 400px;
+  font-size: 22px;
+}
+
+#hive h2 {
+  font-size: 40px;
+  text-align: left;
+}
+#hive h3 {
+  text-align: center;
 }
 
 [class*="col-"] {
