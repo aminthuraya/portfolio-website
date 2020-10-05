@@ -580,9 +580,9 @@ img {
 }
 
 #diamas {
-  width: 60%;
+  max-width: 60%;
   display: inline-block;
-  margin-left: 400px;
+  margin-left: 500px;
   font-size: 22px;
 }
 
@@ -603,9 +603,9 @@ img {
 }
 
 #hive {
-  width: 60%;
+  max-width: 60%;
   display: inline-block;
-  margin-left: 400px;
+  margin-left: 500px;
   font-size: 22px;
 }
 
