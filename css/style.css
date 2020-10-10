@@ -6,12 +6,14 @@ Secondary Color (Gray): #4a4a4a;
 * {
   box-sizing: border-box;
 }
+
 header {
   background-color: #e5edf8;
   padding: 10px 0 4px;
   box-shadow: 0 5px 8px 0 rgba(48, 50, 50, 0.43);
   position: fixed;
-  margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
+  margin: 0 auto;
+  /* No spacing to top and bottom and auto spacing to left and right */
   width: 100%;
 }
 
@@ -21,24 +23,29 @@ header {
   color: #4a4a4a;
   font-family: Montserrat;
 }
+
 main {
   padding-top: 56px;
 }
-nav > ul {
+
+nav>ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
   display: inline-block;
-  width: 100%; 
+  width: 100%;
 }
+
 .navtoggle li:not(:last-child) {
   display: none;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
 }
-.navtoggle, .navtoggle.responsive {
+
+.navtoggle,
+.navtoggle.responsive {
   position: relative;
 }
 
@@ -49,46 +56,55 @@ nav > ul {
   font-size: 20px;
   padding-right: 0;
 }
+
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
-.navtoggle.responsive li  {
+
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
   border-top: 1px solid rgba(133, 161, 253, 0.5);
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
 
-nav > ul > li > a {
+nav>ul>li>a {
   padding: 0px 15px;
   text-transform: uppercase;
-  font-weight: 400; 
+  font-weight: 400;
 }
+
 head {
   font-family: "Montserrat", sans-serif;
 }
+
 body {
   font-family: "Open Sans", sans-serif;
   background-color: #ffffff;
-  font-size: 18px; /* Sets the font size to 16px */
-  font-weight: 300; /* Sets the font weight to 300 */
-  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  font-size: 18px;
+  /* Sets the font size to 16px */
+  font-weight: 300;
+  /* Sets the font weight to 300 */
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 * the font-size */
   color: #4a4a4a;
 }
-h1, 
+
+h1,
 h2,
 h3,
 h4 {
   line-height: 1.4;
   font-family: Montserrat;
 }
+
 h1 {
   font-size: 2.75em;
   font-weight: 800;
- }
+}
 
 h2 {
   font-size: 2.25em;
@@ -99,47 +115,58 @@ h3 {
   font-size: 1.75em;
   font-weight: 600;
 }
+
 h4 {
   font-size: 1.35em;
   font-weight: 400;
 }
+
 img {
-  width: 100%; 
+  width: 100%;
   height: auto;
 }
 
 svg {
-  width: 100%; 
+  width: 100%;
   height: auto;
 }
 
 a {
   color: #4a4a4a;
-  text-decoration: none; /* No underlining */
+  text-decoration: none;
+  /* No underlining */
   transition: 0.8s opacity;
 }
+
 a:visited {
   /* visited link */
   color: #4a4a4a;
 }
+
 a:hover {
   color: #386cfc;
-  text-decoration: underline; /* Underlining when hovering over a link */
+  text-decoration: underline;
+  /* Underlining when hovering over a link */
   opacity: 0.8;
 }
+
 a:active {
   /* selected link */
   color: #993030;
 }
+
 a:hover,
 a:focus {
   color: #386cfc;
   text-decoration: underline;
 }
+
 a.button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  display: inline-block;
+  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #e5edf8;
-  color: #4e4e4e; /* needed to override the default link color */
+  color: #4e4e4e;
+  /* needed to override the default link color */
   margin: auto;
   font-weight: 400;
   padding: 10px 30px 10px 30px;
@@ -147,12 +174,15 @@ a.button {
   box-shadow: 0px 5px 10px 0px rgba(48, 50, 50, 0.43);
   transition: 0.8s opacity;
 }
+
 a.button:hover {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
   text-decoration: none;
   background-color: #c5c5c5;
   color: #ffffff;
 }
+
 a.button.contact {
   background-color: #4a4a4a;
   color: #fff;
@@ -160,7 +190,8 @@ a.button.contact {
   padding: 10px 30px 10px 30px;
   transition: 0.8s opacity;
 
-  }
+}
+
 a.button.contact:hover {
   background-color: #c5c5c5;
   color: #252525;
@@ -169,76 +200,90 @@ a.button.contact:hover {
 }
 
 /* Layout styling */
-  .container {
-    padding: 0 15px;
-    width: 100%;
-  }
-  .row {
-    margin: 25px 0; /* 25px top and bottom, 0 left and right */
-  }
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  #hero h1 {
-    text-align: center; /* Centers text */
-    display: inline-block;
-    font-weight: 600;
-    font-size: 30px;
-    width: 100%;
-   
-  }
-  #hero h4 {
-  text-align: center; /* Centers text */
+.container {
+  padding: 0 15px;
+  width: 100%;
 }
-  #hero {
+
+.row {
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right */
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#hero h1 {
+  text-align: center;
+  /* Centers text */
+  display: inline-block;
+  font-weight: 600;
+  font-size: 30px;
+  width: 100%;
+
+}
+
+#hero h4 {
+  text-align: center;
+  /* Centers text */
+}
+
+#hero {
   background-color: #e5edf8;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
   text-align: left;
-  
+
 }
+
 #hero span {
   display: inline-block;
 }
+
 #work h2 {
   margin: 10px;
   text-align: left;
 }
+
 #work {
   background-color: #ffffff;
   padding: 40px 0;
-  display: inline-block;
+  display: block;
   width: 100%;
+  max-width: 1200px;
+  margin: auto;
+
 }
 
 #about {
   padding: 10px 0;
   display: inline-block;
   width: 100%;
-  
-  }
+
+}
 
 #about h2 {
-  text-align: center;  
-  
- }
+  text-align: center;
+
+}
+
 #mystory h2 {
   text-align: center;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 
 .profile {
   width: 60%;
   display: block;
   margin-left: auto;
-  margin-right: auto; 
+  margin-right: auto;
 }
 
 [class*='col-'] {
-  float: left;
   padding: 10px;
 }
 
@@ -250,7 +295,7 @@ a.button.contact:hover {
   margin: 0 auto;
   padding: 20px 0;
   display: inline-block;
-  width: 100%; 
+  width: 100%;
 }
 
 #skills .container div {
@@ -263,24 +308,26 @@ a.button.contact:hover {
 
 #skills h2 {
   text-align: center;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 
 #diamas h1 {
-  text-align: center;  
+  text-align: center;
 
 }
 
 #diamas h2 {
   font-size: 26px;
   padding: 20px;
-  
+
 
 }
+
 #diamas h3 {
-  text-align: left; 
-  
+  text-align: left;
+
 }
+
 #diamas {
   background-color: #ffffff;
   padding: 20px 0;
@@ -295,27 +342,31 @@ a.button.contact:hover {
 
 #diamas-intro {
   background-color: #ffffff;
-  float: left;
-  text-align: left;  
+  display: block;
+  text-align: left;
 }
-.introduction-diamas > li {
+
+.introduction-diamas>li {
   font-weight: 600;
 }
+
 #hive h1 {
-  text-align: center;  
+  text-align: center;
 
 }
 
 #hive h2 {
   font-size: 26px;
   padding: 20px;
-  
+
 
 }
+
 #hive h3 {
-  text-align: left; 
-  
+  text-align: left;
+
 }
+
 #hive {
   background-color: #ffffff;
   padding: 20px 0;
@@ -330,43 +381,52 @@ a.button.contact:hover {
 
 #hive-intro {
   background-color: #ffffff;
-  float: left;
-  text-align: left;  
+  display: block;
+  text-align: left;
 }
-.introduction-hive > li {
+
+.introduction-hive>li {
   font-weight: 600;
 }
+
 footer {
   background-color: #e5edf8;
   text-align: center;
   padding: 10px 0;
-  position: relative  ;
-  margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
+  position: relative;
+  margin: 0 auto;
+  /* No spacing to top and bottom and auto spacing to left and right */
   width: 100%;
 }
+
 .fab {
   color: #4a4a4a;
   transition: 0.5s opacity;
-   width: 100%;
+  width: 100%;
   position: relative;
-  }
-  .fab:visited {
-    color: #386cfc;
-  }
-  .fab:hover {
-    color: #386cfc; 
-    opacity: 0.8;  
-  }
-  .fab:active {
-    color: #383737;
-  }
+}
+
+.fab:visited {
+  color: #386cfc;
+}
+
+.fab:hover {
+  color: #386cfc;
+  opacity: 0.8;
+}
+
+.fab:active {
+  color: #383737;
+}
 
 .social-links {
   position: relative;
 }
-.social-links ul{
+
+.social-links ul {
   padding: 0px;
 }
+
 .social-links li {
   list-style: none;
   display: inline-block;
@@ -376,6 +436,7 @@ footer {
   margin-right: 10px;
 }
 
+/*
 .sun {
   animation: 4s color-change infinite alternate linear;
 }
@@ -405,23 +466,34 @@ footer {
   from {transform: translate(0,50px);}
   to {transform: translate(200px,50px);}
 }
-
+*/
 /* Start of animation 2 */
 #Sailboats {
   animation: 5s move-change infinite alternate linear;
 }
 
 @keyframes move-change {
-  from {transform: translate(-5,10px);}
-  to {transform: translate(20px,10px);}
+  from {
+    transform: translate(-5, 10px);
+  }
+
+  to {
+    transform: translate(20px, 10px);
+  }
 }
+
 #Cloud {
   animation: 30s move-clouds infinite alternate linear;
- }
+}
 
 @keyframes move-clouds {
-  from {transform: translate(0,20px);}
-  to {transform: translate(280px,10px);}
+  from {
+    transform: translate(0, 20px);
+  }
+
+  to {
+    transform: translate(280px, 10px);
+  }
 }
 
 #Cloud-2 {
@@ -429,25 +501,49 @@ footer {
 }
 
 @keyframes move-clouds {
-  from {transform: translate(0,10px);}
-  to {transform: translate(100px,20px);}
+  from {
+    transform: translate(0, 10px);
+  }
+
+  to {
+    transform: translate(100px, 20px);
+  }
 }
+
 #Sun-2 {
   animation: 20s color-change infinite alternate linear;
 }
+
 @keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
 }
 
 .cls-11 {
   animation: 5s tower infinite alternate linear;
 }
+
 @keyframes tower {
-  0% {fill: #f86019;}
-  50% {fill: #f8fd6d;}
-  100% {fill: #1814f7;}
+  0% {
+    fill: #f86019;
+  }
+
+  50% {
+    fill: #f8fd6d;
+  }
+
+  100% {
+    fill: #1814f7;
+  }
 }
 
 /* Start of animation 3 */
@@ -455,57 +551,104 @@ footer {
 #globe {
   animation: 20s full-spin infinite linear;
   transform-origin: center;
-  transform-box: fill-box; 
+  transform-box: fill-box;
 }
+
 @keyframes full-spin {
-  0% { transform: rotate(10deg); }
-  100% { transform: rotate(-359deg); }
+  0% {
+    transform: rotate(10deg);
+  }
+
+  100% {
+    transform: rotate(-359deg);
+  }
 }
 
 #music {
   animation: 2s zoom infinite;
   transform-origin: center;
   transform-box: fill-box;
-  }
+}
+
 @keyframes zoom {
-  0% { transform: scale(0.6); }
-  50% { transform: scale(0.8); }
-  100% { transform: scale(0.6); }
+  0% {
+    transform: scale(0.6);
   }
+
+  50% {
+    transform: scale(0.8);
+  }
+
+  100% {
+    transform: scale(0.6);
+  }
+}
 
 #outdoors {
   animation: 2s wiggle infinite ease;
 }
+
 @keyframes wiggle {
-  0% { transform: translate(0, 0); }
-  50% { transform: translate(6px, 6px); }
-  100% { transform: translate(0, 0); }
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(6px, 6px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
 }
+
 #bake {
   animation: 0.8s bounce infinite alternate ease;
 }
+
 @keyframes bounce {
-  0% { transform: translate(0, 0); }
-  100% { transform: translate(0, -10px); }
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(0, -10px);
+  }
 }
 
 #text {
-  animation: typing 4s  infinite alternate ease ;
-  
+  animation: typing 4s infinite alternate ease;
+
 }
+
 @keyframes typing {
-  0% { transform: translate(0, 40px); }
-  100% { transform: translate(0, -40px); }
+  0% {
+    transform: translate(0, 40px);
+  }
+
+  100% {
+    transform: translate(0, -40px);
+  }
 }
 
 #Paint {
   animation: 2s move-side infinite ease;
 }
+
 @keyframes move-side {
-  0% { transform: translate(0, 0); }
-  50% { transform: translate(-6px, -6px); }
-  100% { transform: translate(0, 0); }
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(-6px, -6px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
 }
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -520,18 +663,23 @@ Medium devices (640px and larger)
     float: right;
     margin-top: 4px;
   }
-  nav > ul {
+
+  nav>ul {
     margin: 1em 0;
   }
-  nav > ul > li {
+
+  nav>ul>li {
     display: inline-block;
   }
+
   .navtoggle li:not(:last-child) {
     display: inline-block;
   }
+
   .navtoggle li:last-child {
-    display: none;    
+    display: none;
   }
+
   .title {
     width: auto;
     float: left;
@@ -539,11 +687,13 @@ Medium devices (640px and larger)
     font-size: 1.625em;
     font-weight: 400;
   }
+
   #about h2 {
-    padding-top: 40px; 
+    padding-top: 20px;
   }
+
   #hero h1 {
-    margin-top:40px;
+    margin-top: 60px;
     font-size: 50px;
   }
 
@@ -551,84 +701,93 @@ Medium devices (640px and larger)
     margin: 10px;
     text-align: center;
   }
-.container {
-  max-width: 640px; 
-}
 
-#skills .container div {
-  text-align: center;
-}
+  #work h3 {
+    margin-top: 20px;
+  }
 
-#skills .container div ul {
-  list-style: none;
-  text-align: center;
+  .container {
+    max-width: 640px;
+    margin: 0 auto;
+  }
 
-}
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-}
+  #skills .container div {
+    text-align: center;
+  }
 
-#diamas h1 {
-  text-align: center;  
-  padding: 0;
-  font-size: 50px;
-  font-weight: 600;
-  padding-top: 40px;
-}
+  #skills .container div ul {
+    list-style: none;
+    text-align: center;
 
-#diamas {
-  max-width: 60%;
-  display: inline-block;
-  margin-left: 500px;
-  font-size: 22px;
-}
+  }
 
-#diamas h2 {
-  font-size: 40px;
-  text-align: left;
-}
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
 
-#diamas h3 {
-  text-align: center;
-}
+  #diamas h1 {
+    text-align: center;
+    padding: 0;
+    font-size: 50px;
+    font-weight: 600;
+    padding-top: 40px;
+  }
 
-#hive h1 {
-  text-align: center;  
-  padding: 0;
-  font-weight: 600;
-  padding-top: 40px;
-}
+  #diamas {
+    max-width: 80%;
+    display: inline-block;
+    margin: 10%;
+    font-size: 22px;
+  }
 
-#hive {
-  max-width: 60%;
-  display: inline-block;
-  margin-left: 500px;
-  font-size: 22px;
-}
+  #diamas h2 {
+    font-size: 40px;
+    text-align: left;
+  }
 
-#hive h2 {
-  font-size: 40px;
-  text-align: left;
-}
-#hive h3 {
-  text-align: center;
-}
+  #diamas h3 {
+    text-align: center;
+  }
 
-[class*="col-"] {
-  float: left;
-  padding: 10px;
-}
+  #hive h1 {
+    text-align: center;
+    padding: 0;
+    font-weight: 600;
+    padding-top: 40px;
+  }
 
-.col-md-4 {
-  width: 33%;
-}
+  #hive {
+    max-width: 80%;
+    display: inline-block;
+    margin: 10%;
+    font-size: 22px;
+  }
 
-.col-md-6 {
-  width: 50%;
-}
+  #hive h2 {
+    font-size: 40px;
+    text-align: left;
+  }
+
+  #hive h3 {
+    text-align: center;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+
+  .col-md-4 {
+    width: 33%;
+  }
+
+  .col-md-6 {
+    width: 50%;
+
+  }
 
 }
 
@@ -647,45 +806,41 @@ Large devices (1024px or larger)
     margin-top: 4px;
   }
 
-.container {
-  max-width: 1920px;
-  margin-left: auto;
-  margin-right: auto;
-}
+  .container {
+    max-width: 1920px;
+    margin: 0 auto;
+  }
 
-[class*="col-lg-"] {
-  float: left;
-  padding: 20px;
-}
+  [class*="col-lg-"] {
+    float: left;
+    padding: 20px;
+  }
 
-.col-lg-4 {
-  width: 33%;
-}
+  .col-lg-4 {
+    width: 33%;
+  }
 
-.col-lg-5 {
-  width: 41.66%;
-}
+  .col-lg-5 {
+    width: 41.66%;
+  }
 
-.col-lg-6 {
-  width: 50%;
-}
+  .col-lg-6 {
+    width: 50%;
+  }
 
-.col-lg-7 {
-  width: 58.33%
-}
+  .col-lg-7 {
+    width: 58.33%
+  }
 
 }
 
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {
-}
+@media only screen and (min-width: 1440px) {}
 
 
 /* ==============================
 Extra-large devices (1920px or larger)
 ================================= */
-@media only screen and (min-width: 1920px) {
-}
-
+@media only screen and (min-width: 1920px) {}
