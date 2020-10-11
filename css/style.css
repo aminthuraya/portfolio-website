@@ -1,6 +1,6 @@
 /*
 Colors used:
-Primary Color (white): #ffffff;
+Primary Color (white): #fff;
 Secondary Color (Gray): #4a4a4a;
 */
 * {
@@ -13,7 +13,6 @@ header {
   box-shadow: 0 5px 8px 0 rgba(48, 50, 50, 0.43);
   position: fixed;
   margin: 0 auto;
-  /* No spacing to top and bottom and auto spacing to left and right */
   width: 100%;
 }
 
@@ -28,7 +27,7 @@ main {
   padding-top: 56px;
 }
 
-nav>ul {
+nav > ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -71,8 +70,8 @@ nav>ul {
   padding: 0 0 10px;
 }
 
-nav>ul>li>a {
-  padding: 0px 15px;
+nav > ul > li > a {
+  padding: 0 15px;
   text-transform: uppercase;
   font-weight: 400;
 }
@@ -83,12 +82,15 @@ head {
 
 body {
   font-family: "Open Sans", sans-serif;
-  background-color: #ffffff;
+  background-color: #fff;
   font-size: 18px;
+
   /* Sets the font size to 16px */
   font-weight: 300;
+
   /* Sets the font weight to 300 */
   line-height: 1.6;
+
   /* Sets the line-height to 1.6 * the font-size */
   color: #4a4a4a;
 }
@@ -121,6 +123,11 @@ h4 {
   font-weight: 400;
 }
 
+p {
+  font-size: 18px;
+  font-weight: 300;
+}
+
 img {
   width: 100%;
   height: auto;
@@ -134,6 +141,7 @@ svg {
 a {
   color: #4a4a4a;
   text-decoration: none;
+
   /* No underlining */
   transition: 0.8s opacity;
 }
@@ -146,6 +154,7 @@ a:visited {
 a:hover {
   color: #386cfc;
   text-decoration: underline;
+
   /* Underlining when hovering over a link */
   opacity: 0.8;
 }
@@ -163,24 +172,27 @@ a:focus {
 
 a.button {
   display: inline-block;
+
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #e5edf8;
-  color: #4e4e4e;
+  color: #5589d1;
+
   /* needed to override the default link color */
   margin: auto;
   font-weight: 400;
   padding: 10px 30px 10px 30px;
   border-radius: 3px;
-  box-shadow: 0px 5px 10px 0px rgba(48, 50, 50, 0.43);
+  box-shadow: 0 5px 10px 0 rgba(48, 50, 50, 0.43);
   transition: 0.8s opacity;
 }
 
 a.button:hover {
   opacity: 0.8;
+
   /* Reduces the opacity of the button to 80% */
   text-decoration: none;
   background-color: #c5c5c5;
-  color: #ffffff;
+  color: #fff;
 }
 
 a.button.contact {
@@ -189,7 +201,6 @@ a.button.contact {
   text-transform: lowercase;
   padding: 10px 30px 10px 30px;
   transition: 0.8s opacity;
-
 }
 
 a.button.contact:hover {
@@ -207,6 +218,7 @@ a.button.contact:hover {
 
 .row {
   margin: 25px 0;
+
   /* 25px top and bottom, 0 left and right */
 }
 
@@ -218,16 +230,17 @@ a.button.contact:hover {
 
 #hero h1 {
   text-align: center;
+
   /* Centers text */
   display: inline-block;
   font-weight: 600;
   font-size: 30px;
   width: 100%;
-
 }
 
 #hero h4 {
   text-align: center;
+
   /* Centers text */
 }
 
@@ -237,7 +250,6 @@ a.button.contact:hover {
   display: inline-block;
   width: 100%;
   text-align: left;
-
 }
 
 #hero span {
@@ -250,25 +262,22 @@ a.button.contact:hover {
 }
 
 #work {
-  background-color: #ffffff;
+  background-color: #fff;
   padding: 40px 0;
   display: block;
   width: 100%;
   max-width: 1200px;
   margin: auto;
-
 }
 
 #about {
   padding: 10px 0;
   display: inline-block;
   width: 100%;
-
 }
 
 #about h2 {
   text-align: center;
-
 }
 
 #mystory h2 {
@@ -313,27 +322,22 @@ a.button.contact:hover {
 
 #diamas h1 {
   text-align: center;
-
 }
 
 #diamas h2 {
   font-size: 26px;
   padding: 20px;
-
-
 }
 
 #diamas h3 {
   text-align: left;
-
 }
 
 #diamas {
-  background-color: #ffffff;
+  background-color: #fff;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
-
 }
 
 #diamas p {
@@ -341,38 +345,33 @@ a.button.contact:hover {
 }
 
 #diamas-intro {
-  background-color: #ffffff;
+  background-color: #fff;
   display: block;
   text-align: left;
 }
 
-.introduction-diamas>li {
+.introduction-diamas > li {
   font-weight: 600;
 }
 
 #hive h1 {
   text-align: center;
-
 }
 
 #hive h2 {
   font-size: 26px;
   padding: 20px;
-
-
 }
 
 #hive h3 {
   text-align: left;
-
 }
 
 #hive {
-  background-color: #ffffff;
+  background-color: #fff;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
-
 }
 
 #hive p {
@@ -380,12 +379,12 @@ a.button.contact:hover {
 }
 
 #hive-intro {
-  background-color: #ffffff;
+  background-color: #fff;
   display: block;
   text-align: left;
 }
 
-.introduction-hive>li {
+.introduction-hive > li {
   font-weight: 600;
 }
 
@@ -395,6 +394,7 @@ footer {
   padding: 10px 0;
   position: relative;
   margin: 0 auto;
+
   /* No spacing to top and bottom and auto spacing to left and right */
   width: 100%;
 }
@@ -424,7 +424,7 @@ footer {
 }
 
 .social-links ul {
-  padding: 0px;
+  padding: 0;
 }
 
 .social-links li {
@@ -467,6 +467,7 @@ footer {
   to {transform: translate(200px,50px);}
 }
 */
+
 /* Start of animation 2 */
 #Sailboats {
   animation: 5s move-change infinite alternate linear;
@@ -618,7 +619,6 @@ footer {
 
 #text {
   animation: typing 4s infinite alternate ease;
-
 }
 
 @keyframes typing {
@@ -664,11 +664,11 @@ Medium devices (640px and larger)
     margin-top: 4px;
   }
 
-  nav>ul {
+  nav > ul {
     margin: 1em 0;
   }
 
-  nav>ul>li {
+  nav > ul > li {
     display: inline-block;
   }
 
@@ -718,7 +718,6 @@ Medium devices (640px and larger)
   #skills .container div ul {
     list-style: none;
     text-align: center;
-
   }
 
   img {
@@ -786,9 +785,7 @@ Medium devices (640px and larger)
 
   .col-md-6 {
     width: 50%;
-
   }
-
 }
 
 /* ==============================
@@ -829,18 +826,18 @@ Large devices (1024px or larger)
   }
 
   .col-lg-7 {
-    width: 58.33%
+    width: 58.33%;
   }
-
 }
 
 /* ==============================
 X-large devices (1440px or larger)
-================================= */
+================================
 @media only screen and (min-width: 1440px) {}
-
 
 /* ==============================
 Extra-large devices (1920px or larger)
-================================= */
+================================
 @media only screen and (min-width: 1920px) {}
+
+*/
