@@ -186,6 +186,38 @@ a.button {
   transition: 0.8s opacity;
 }
 
+#diamasbutton {
+  background-color: #fff;
+  text-align: center;
+  position: relative;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.gotodiamas {
+  background-color: #e5edf8;
+  color: #5589d1;
+  font-weight: 400;
+  padding: 10px 30px 10px 30px;
+  border-radius: 3px;
+}
+
+#hivebutton {
+  background-color: #fff;
+  text-align: center;
+  position: relative;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.gotohive {
+  background-color: #e5edf8;
+  color: #5589d1;
+  font-weight: 400;
+  padding: 10px 30px 10px 30px;
+  border-radius: 3px;
+}
+
 a.button:hover {
   opacity: 0.8;
 
@@ -217,7 +249,7 @@ a.button.contact:hover {
 }
 
 .row {
-  margin: 25px 0;
+  margin: 10px 0;
 
   /* 25px top and bottom, 0 left and right */
 }
@@ -322,26 +354,28 @@ a.button.contact:hover {
 
 #diamas h1 {
   text-align: center;
+  font-weight: 600;
 }
 
 #diamas h2 {
   font-size: 26px;
-  padding: 20px;
+  padding: 0 20px;
 }
 
 #diamas h3 {
   text-align: left;
+  padding: 0 20px;
 }
 
 #diamas {
   background-color: #fff;
-  padding: 20px 0;
+  padding: 10px 0;
   display: inline-block;
   width: 100%;
 }
 
 #diamas p {
-  padding: 20px;
+  padding: 0 20px;
 }
 
 #diamas-intro {
@@ -356,15 +390,17 @@ a.button.contact:hover {
 
 #hive h1 {
   text-align: center;
+  font-weight: 600;
 }
 
 #hive h2 {
   font-size: 26px;
-  padding: 20px;
+  padding: 0 20px;
 }
 
 #hive h3 {
-  text-align: left;
+  text-align: center;
+  padding: 0 20px;
 }
 
 #hive {
@@ -375,7 +411,7 @@ a.button.contact:hover {
 }
 
 #hive p {
-  padding: 20px;
+  padding: 0 20px;
 }
 
 #hive-intro {
@@ -388,6 +424,10 @@ a.button.contact:hover {
   font-weight: 600;
 }
 
+.ddimage {
+  padding: 0 20px;
+}
+
 footer {
   background-color: #e5edf8;
   text-align: center;
@@ -397,6 +437,11 @@ footer {
 
   /* No spacing to top and bottom and auto spacing to left and right */
   width: 100%;
+}
+
+.email {
+  color: #5589d1;
+  font-weight: 400;
 }
 
 .fab {
@@ -431,9 +476,9 @@ footer {
   list-style: none;
   display: inline-block;
   position: relative;
-  font-size: 30px;
+  font-size: 40px;
   color: #fff;
-  margin-right: 10px;
+  margin: 20px;
 }
 
 /*
@@ -683,9 +728,9 @@ Medium devices (640px and larger)
   .title {
     width: auto;
     float: left;
-    margin-top: 4px;
-    font-size: 1.625em;
-    font-weight: 400;
+    margin-top: 13px;
+    font-size: 1.5em;
+    font-weight: 600;
   }
 
   #about h2 {
@@ -694,7 +739,8 @@ Medium devices (640px and larger)
 
   #hero h1 {
     margin-top: 60px;
-    font-size: 50px;
+    margin-bottom: 0;
+    font-size: 40px;
   }
 
   #work h2 {
@@ -739,6 +785,7 @@ Medium devices (640px and larger)
     max-width: 80%;
     display: inline-block;
     margin: 10%;
+    margin-top: 5%;
     font-size: 22px;
   }
 
@@ -762,6 +809,7 @@ Medium devices (640px and larger)
     max-width: 80%;
     display: inline-block;
     margin: 10%;
+    margin-top: 5%;
     font-size: 22px;
   }
 
@@ -772,6 +820,14 @@ Medium devices (640px and larger)
 
   #hive h3 {
     text-align: center;
+  }
+
+  .gotodiamas {
+    padding: 10px 60px 10px 60px;
+  }
+
+  .gotohive {
+    padding: 10px 60px 10px 60px;
   }
 
   [class*="col-"] {
